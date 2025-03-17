@@ -26,7 +26,7 @@ import utils.Conexao;
 
 public class PartidaDAO {
 
-    // Inserir nova partida
+   
     public void inserir(Partida partida) throws SQLException {
         String sql = "INSERT INTO partidas (data_hora_partida, quant_jogadores, estado, tipo, codigo, localizacao) VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection conexao = Conexao.getConnection();
@@ -41,7 +41,7 @@ public class PartidaDAO {
         }
     }
 
-    // Atualizar uma partida existente
+    
     public void atualizar(Partida partida) throws SQLException {
         String sql = "UPDATE partidas SET data_hora_partida=?, quant_jogadores=?, estado=?, tipo=?, codigo=?, localizacao=? WHERE id_partida=?";
         try (Connection conexao = Conexao.getConnection();
@@ -57,7 +57,7 @@ public class PartidaDAO {
         }
     }
 
-    // Deletar uma partida pelo ID
+   
     public void deletar(int idPartida) throws SQLException {
         String sql = "DELETE FROM partidas WHERE id_partida=?";
         try (Connection conexao = Conexao.getConnection();
@@ -67,7 +67,7 @@ public class PartidaDAO {
         }
     }
 
-    // Buscar uma partida pelo ID
+   
     public Partida buscarPorId(int idPartida) throws SQLException {
         String sql = "SELECT * FROM partidas WHERE id_partida=?";
         try (Connection conexao = Conexao.getConnection();
@@ -90,7 +90,7 @@ public class PartidaDAO {
         return null;
     }
 
-    // Buscar todas as partidas
+    
     public List<Partida> buscarTodas() throws SQLException {
         String sql = "SELECT * FROM partidas";
         List<Partida> lista = new ArrayList<>();
