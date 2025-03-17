@@ -1,0 +1,9 @@
+br\com\abimaelcristovao\futarena\model\Partida.class
+utils\Conexao.class
+br\com\abimaelcristovao\futarena\model\Time.class
+br\com\abimaelcristovao\futarena\model\PessoaPartida.class
+br\com\abimaelcristovao\futarena\enums\EstadoPartida.class
+br\com\abimaelcristovao\futarena\enums\TipoPartida.class
+br\com\abimaelcristovao\futarena\model\Ranking.class
+br\com\abimaelcristovao\futarena\enums\TipoJogador.class
+br\com\abimaelcristovao\futarena\model\Pessoa.class
