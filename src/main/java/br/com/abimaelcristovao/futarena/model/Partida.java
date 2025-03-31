@@ -8,7 +8,8 @@ package br.com.abimaelcristovao.futarena.model;
 
 import br.com.abimaelcristovao.futarena.enums.EstadoPartida;
 import br.com.abimaelcristovao.futarena.enums.TipoPartida;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 /**
  *
@@ -16,13 +17,11 @@ import java.time.LocalDateTime;
  */
 public class Partida {
     private int idPartida;
-    private LocalDateTime dataHoraPartida;
-    private Time horaPartida;
-    private int quantJogadores;
+    private LocalDate dataPartida;
+    private LocalTime horaPartida;
     private EstadoPartida estado;
     private TipoPartida tipo;
     private int codigo;
-    private String Localizacao;
 
     public int getIdPartida() {
         return idPartida;
@@ -32,28 +31,20 @@ public class Partida {
         this.idPartida = idPartida;
     }
 
-    public LocalDateTime getDataHoraPartida() {
-        return dataHoraPartida;
+    public LocalDate getDataPartida() {
+        return dataPartida;
     }
 
-    public void setDataHoraPartida(LocalDateTime dataHoraPartida) {
-        this.dataHoraPartida = dataHoraPartida;
+    public void setDataPartida(LocalDate dataPartida) {
+        this.dataPartida = dataPartida;
     }
 
-    public Time getHoraPartida() {
+    public LocalTime getHoraPartida() {
         return horaPartida;
     }
 
-    public void setHoraPartida(Time horaPartida) {
+    public void setHoraPartida(LocalTime horaPartida) {
         this.horaPartida = horaPartida;
-    }
-
-    public int getQuantJogadores() {
-        return quantJogadores;
-    }
-
-    public void setQuantJogadores(int quantJogadores) {
-        this.quantJogadores = quantJogadores;
     }
 
     public EstadoPartida getEstado() {
@@ -79,12 +70,10 @@ public class Partida {
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
+   
 
-    public String getLocalizacao() {
-        return Localizacao;
-    }
+    
 
-    public void setLocalizacao(String Localizacao) {
-        this.Localizacao = Localizacao;
-    }
+    
+   
 }

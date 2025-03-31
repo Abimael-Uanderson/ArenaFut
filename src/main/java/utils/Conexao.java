@@ -9,11 +9,12 @@ import java.sql.SQLException;
  *
  * @author abima
  */
+
 public class Conexao {
     
     private static final String URL = "jdbc:mysql://localhost/arenafut";
     private static final String USUARIO = "root";
-    private static final String SENHA = "Senha";
+    private static final String SENHA = "senha";
     
    
     public static Connection getConnection() throws SQLException {

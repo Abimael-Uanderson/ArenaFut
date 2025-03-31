@@ -23,7 +23,7 @@ public class PessoaDAO {
 
     
     public void inserir(Pessoa pessoa) throws SQLException {
-        String sql = "INSERT INTO pessoas (nome, email, senha, posicao, nivel) VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO pessoas (nome, email, senha, tipo_jogador, nivel) VALUES (?, ?, ?, ?, ?)";
         try (Connection conexao = Conexao.getConnection();
              PreparedStatement stmt = conexao.prepareStatement(sql)) {
             stmt.setString(1, pessoa.getNome());
@@ -34,10 +34,14 @@ public class PessoaDAO {
             stmt.executeUpdate();
         }
     }
+    
+    
+ 
 
    
+   
     public void atualizar(Pessoa pessoa) throws SQLException {
-        String sql = "UPDATE pessoas SET nome = ?, email = ?, senha = ?, posicao = ?, nivel = ? WHERE id_pessoa = ?";
+        String sql = "UPDATE pessoas SET nome = ?, email = ?, senha = ?, tipo_jogador = ?, nivel = ? WHERE pessoa_id = ?";
         try (Connection conexao = Conexao.getConnection();
              PreparedStatement stmt = conexao.prepareStatement(sql)) {
             stmt.setString(1, pessoa.getNome());
@@ -52,7 +56,7 @@ public class PessoaDAO {
 
     
     public void deletar(int idPessoa) throws SQLException {
-        String sql = "DELETE FROM pessoas WHERE id_pessoa = ?";
+        String sql = "DELETE FROM pessoas WHERE pessoa_id = ?";
         try (Connection conexao = Conexao.getConnection();
              PreparedStatement stmt = conexao.prepareStatement(sql)) {
             stmt.setInt(1, idPessoa);
@@ -61,20 +65,20 @@ public class PessoaDAO {
     }
 
    
-    public Pessoa buscarPorId(int idPessoa) throws SQLException {
-        String sql = "SELECT * FROM pessoas WHERE id_pessoa = ?";
+    public Pessoa buscarPorEmail(String email) throws SQLException {
+        String sql = "SELECT * FROM pessoas WHERE email = ?";
         try (Connection conexao = Conexao.getConnection();
              PreparedStatement stmt = conexao.prepareStatement(sql)) {
-            stmt.setInt(1, idPessoa);
+            stmt.setString(1, email);
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
                 Pessoa pessoa = new Pessoa();
-                pessoa.setIdPessoa(rs.getInt("id_pessoa"));
+                pessoa.setIdPessoa(rs.getInt("pessoa_id"));
                 pessoa.setNome(rs.getString("nome"));
                 pessoa.setEmail(rs.getString("email"));
                 pessoa.setSenha(rs.getString("senha"));
-                pessoa.setPosicao(TipoJogador.valueOf(rs.getString("posicao")));
+                pessoa.setPosicao(TipoJogador.valueOf(rs.getString("tipo_jogador")));
                 pessoa.setNivel(rs.getInt("nivel"));
                 return pessoa;
             }

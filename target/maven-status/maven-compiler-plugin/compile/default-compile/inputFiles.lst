@@ -1,8 +1,12 @@
-E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\model\Ranking.java
-E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\model\Time.java
 E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\enums\EstadoPartida.java
 E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\model\Partida.java
 E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\model\Pessoa.java
+E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\model\Ranking.java
+E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\TesteDAO.java
+E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\dao\PartidaDAO.java
+E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\dao\PessoaPartidaDAO.java
+E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\dao\PessoaDAO.java
+E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\model\Time.java
 E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\model\PessoaPartida.java
 E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\enums\TipoJogador.java
 E:\OneDrive\Documentos\NetBeansProjects\FutArena\src\main\java\br\com\abimaelcristovao\futarena\enums\TipoPartida.java
