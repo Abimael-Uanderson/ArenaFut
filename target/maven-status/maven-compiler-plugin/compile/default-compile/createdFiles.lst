@@ -1,0 +1,14 @@
+br\com\abimaelcristovao\arenafut\dao\PartidaDAO.class
+br\com\abimaelcristovao\arenafut\resources\JakartaEE11Resource.class
+br\com\abimaelcristovao\arenafut\enums\TipoJogador.class
+br\com\abimaelcristovao\arenafut\model\Partida.class
+br\com\abimaelcristovao\arenafut\JakartaRestConfiguration.class
+br\com\abimaelcristovao\arenafut\model\PessoaPartida.class
+br\com\abimaelcristovao\arenafut\model\Time.class
+br\com\abimaelcristovao\arenafut\dao\PessoaDAO.class
+br\com\abimaelcristovao\arenafut\enums\TipoPartida.class
+br\com\abimaelcristovao\arenafut\model\Ranking.class
+br\com\abimaelcristovao\arenafut\dao\PessoaPartidaDAO.class
+br\com\abimaelcristovao\arenafut\enums\EstadoPartida.class
+br\com\abimaelcristovao\arenafut\utils\Conexao.class
+br\com\abimaelcristovao\arenafut\model\Pessoa.class
